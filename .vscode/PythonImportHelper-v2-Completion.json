@@ -1,0 +1,171 @@
+[
+    {
+        "label": "python_branch",
+        "importPath": "platform",
+        "description": "platform",
+        "isExtraImport": true,
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "queue",
+        "description": "queue",
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "KING",
+        "importPath": "chess",
+        "description": "chess",
+        "isExtraImport": true,
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "Piece",
+        "kind": 6,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "class Piece:\n    def __init__(self, team, type, image, killable=False):\n        self.team = team\n        self.type = type\n        self.killable = killable\n        self.image = image\n## Creates instances of chess pieces, so far we got: pawn, king, rook and bishop\n## The first parameter defines what team its on and the second, what type of piece it is\nbp = Piece('b', 'p', 'b_pawn.png')\nwp = Piece('w', 'p', 'w_pawn.png')",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "create_board",
+        "kind": 2,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "def create_board(board):\n    board[0] = [Piece('b', 'r', 'b_rook.png'), Piece('b', 'kn', 'b_knight.png'), Piece('b', 'b', 'b_bishop.png'), \\\n               Piece('b', 'q', 'b_queen.png'), Piece('b', 'k', 'b_king.png'), Piece('b', 'b', 'b_bishop.png'), \\\n               Piece('b', 'kn', 'b_knight.png'), Piece('b', 'r', 'b_rook.png')]\n    board[7] = [Piece('w', 'r', 'w_rook.png'), Piece('w', 'kn', 'w_knight.png'), Piece('w', 'b', 'w_bishop.png'), \\\n               Piece('w', 'q', 'w_queen.png'), Piece('w', 'k', 'w_king.png'), Piece('w', 'b', 'w_bishop.png'), \\\n               Piece('w', 'kn', 'w_knight.png'), Piece('w', 'r', 'w_rook.png')]\n    for i in range(8):\n        board[1][i] = Piece('b', 'p', 'b_pawn.png')\n        board[6][i] = Piece('w', 'p', 'w_pawn.png')",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "board",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "board = [['  ' for i in range(8)] for i in range(8)]\n## Creates a chess piece class that shows what team a piece is on, what type of piece it is and whether or not it can be killed by another selected piece.\nclass Piece:\n    def __init__(self, team, type, image, killable=False):\n        self.team = team\n        self.type = type\n        self.killable = killable\n        self.image = image\n## Creates instances of chess pieces, so far we got: pawn, king, rook and bishop\n## The first parameter defines what team its on and the second, what type of piece it is",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "bp = Piece('b', 'p', 'b_pawn.png')\nwp = Piece('w', 'p', 'w_pawn.png')\nbk = Piece('b', 'k', 'b_king.png')\nwk = Piece('w', 'k', 'w_king.png')\nbr = Piece('b', 'r', 'b_rook.png')\nwr = Piece('w', 'r', 'w_rook.png')\nbb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "wp",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "wp = Piece('w', 'p', 'w_pawn.png')\nbk = Piece('b', 'k', 'b_king.png')\nwk = Piece('w', 'k', 'w_king.png')\nbr = Piece('b', 'r', 'b_rook.png')\nwr = Piece('w', 'r', 'w_rook.png')\nbb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "bk",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "bk = Piece('b', 'k', 'b_king.png')\nwk = Piece('w', 'k', 'w_king.png')\nbr = Piece('b', 'r', 'b_rook.png')\nwr = Piece('w', 'r', 'w_rook.png')\nbb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "wk",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "wk = Piece('w', 'k', 'w_king.png')\nbr = Piece('b', 'r', 'b_rook.png')\nwr = Piece('w', 'r', 'w_rook.png')\nbb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "br",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "br = Piece('b', 'r', 'b_rook.png')\nwr = Piece('w', 'r', 'w_rook.png')\nbb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "wr",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "wr = Piece('w', 'r', 'w_rook.png')\nbb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "bb",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "bb = Piece('b', 'b', 'b_bishop.png')\nwb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "wb",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "wb = Piece('w', 'b', 'w_bishop.png')\nbq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),\n                  (0, 1): KING.image.load(bp.image), (1, 1): pygame.image.load(bp.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "bq",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "bq = Piece('b', 'q', 'b_queen.png')\nwq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),\n                  (0, 1): KING.image.load(bp.image), (1, 1): pygame.image.load(bp.image),\n                  (2, 1): KING.image.load(bp.image), (3, 1): pygame.image.load(bp.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "wq",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "wq = Piece('w', 'q', 'w_queen.png')\nbkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),\n                  (0, 1): KING.image.load(bp.image), (1, 1): pygame.image.load(bp.image),\n                  (2, 1): KING.image.load(bp.image), (3, 1): pygame.image.load(bp.image),\n                  (4, 1): KING.image.load(bp.image), (5, 1): pygame.image.load(bp.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "bkn",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "bkn = Piece('b', 'kn', 'b_knight.png')\nwkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),\n                  (0, 1): KING.image.load(bp.image), (1, 1): pygame.image.load(bp.image),\n                  (2, 1): KING.image.load(bp.image), (3, 1): pygame.image.load(bp.image),\n                  (4, 1): KING.image.load(bp.image), (5, 1): pygame.image.load(bp.image),\n                  (6, 1): KING.image.load(bp.image), (7, 1): pygame.image.load(bp.image),",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "wkn",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "wkn = Piece('w', 'kn', 'w_knight.png')\nstarting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),\n                  (0, 1): KING.image.load(bp.image), (1, 1): pygame.image.load(bp.image),\n                  (2, 1): KING.image.load(bp.image), (3, 1): pygame.image.load(bp.image),\n                  (4, 1): KING.image.load(bp.image), (5, 1): pygame.image.load(bp.image),\n                  (6, 1): KING.image.load(bp.image), (7, 1): pygame.image.load(bp.image),\n                  (0, 2): None, (1, 2): None, (2, 2): None, (3, 2): None,",
+        "detail": "chess",
+        "documentation": {}
+    },
+    {
+        "label": "starting_order",
+        "kind": 5,
+        "importPath": "chess",
+        "description": "chess",
+        "peekOfCode": "starting_order = {(0, 0): KING.image.load(br.image), (1, 0): pygame.image.load(bkn.image),\n                  (2, 0): KING.load(bb.image), (3, 0): pygame.image.load(bk.image),\n                  (4, 0): KING.load(bq.image), (5, 0): pygame.image.load(bb.image),\n                  (6, 0): KING.image.load(bkn.image), (7, 0): pygame.image.load(br.image),\n                  (0, 1): KING.image.load(bp.image), (1, 1): pygame.image.load(bp.image),\n                  (2, 1): KING.image.load(bp.image), (3, 1): pygame.image.load(bp.image),\n                  (4, 1): KING.image.load(bp.image), (5, 1): pygame.image.load(bp.image),\n                  (6, 1): KING.image.load(bp.image), (7, 1): pygame.image.load(bp.image),\n                  (0, 2): None, (1, 2): None, (2, 2): None, (3, 2): None,\n                  (4, 2): None, (5, 2): None, (6, 2): None, (7, 2): None,",
+        "detail": "chess",
+        "documentation": {}
+    }
+]
